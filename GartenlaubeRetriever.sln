@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GartenlaubeRetriever", "GartenlaubeRetriever\GartenlaubeRetriever.csproj", "{B2BEAD22-2D0C-4867-BAF7-F6BA41D42C08}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PostProcessor", "PostProcessor\PostProcessor.pyproj", "{11BE74A2-EE18-4589-AB08-8D7B12BC1095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellChecker", "SpellChecker\SpellChecker.csproj", "{B80B4A0C-60F1-4A5E-8C53-FB731423AD95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuceneWrapper", "D:\Arne\Downloads\LuceneWrapper-master\LuceneWrapper-master\LuceneWrapper\LuceneWrapper.csproj", "{220A78BA-8AD2-4D66-A435-6A9B7DEFD444}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,16 @@ Global
 		{B2BEAD22-2D0C-4867-BAF7-F6BA41D42C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2BEAD22-2D0C-4867-BAF7-F6BA41D42C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2BEAD22-2D0C-4867-BAF7-F6BA41D42C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BE74A2-EE18-4589-AB08-8D7B12BC1095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BE74A2-EE18-4589-AB08-8D7B12BC1095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80B4A0C-60F1-4A5E-8C53-FB731423AD95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B80B4A0C-60F1-4A5E-8C53-FB731423AD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B80B4A0C-60F1-4A5E-8C53-FB731423AD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B80B4A0C-60F1-4A5E-8C53-FB731423AD95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220A78BA-8AD2-4D66-A435-6A9B7DEFD444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220A78BA-8AD2-4D66-A435-6A9B7DEFD444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220A78BA-8AD2-4D66-A435-6A9B7DEFD444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220A78BA-8AD2-4D66-A435-6A9B7DEFD444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
