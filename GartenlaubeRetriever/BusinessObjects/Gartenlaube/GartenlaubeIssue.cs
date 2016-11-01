@@ -10,5 +10,10 @@ namespace UntoterOstgote.Martus.GartenlaubeKorpus.BusinessObjects.Gartenlaube
     {
         public int IssueNumber { get; set; }
         public List<GartenlaubeArticle> Articles { get; set; }
+
+        public GartenlaubeIssue()
+        {
+            this.Articles = new List<Gartenlaube.GartenlaubeArticle>();
+        }
     }
 }

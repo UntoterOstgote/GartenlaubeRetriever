@@ -11,5 +11,10 @@ namespace UntoterOstgote.Martus.GartenlaubeKorpus.BusinessObjects.Gartenlaube
         public DateTime Year { get; set; }
         public List<GartenlaubeIssue> GartenlaubeIssues { get; set; }
         public string MarkdownSource { get; set; }
+
+        public GartenlaubeYear()
+        {
+            this.GartenlaubeIssues = new List<GartenlaubeIssue>();
+        }
     }
 }

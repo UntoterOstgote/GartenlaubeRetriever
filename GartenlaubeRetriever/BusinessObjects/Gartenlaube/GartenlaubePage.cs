@@ -9,6 +9,7 @@ namespace UntoterOstgote.Martus.GartenlaubeKorpus.BusinessObjects.Gartenlaube
     public class GartenlaubePage
     {
         public string MarkdownSource { get; set; }
+        public string Location { get; set; }
         public PageQuality PageQuality { get; set; }
     }
 }
