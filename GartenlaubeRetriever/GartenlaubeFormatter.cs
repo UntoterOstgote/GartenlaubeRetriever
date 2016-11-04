@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using CommonMark.Syntax;
+using System.Runtime.Serialization;
 
 namespace UntoterOstgote.Martus.GartenlaubeKorpus
 {
@@ -62,12 +63,18 @@ namespace UntoterOstgote.Martus.GartenlaubeKorpus
         }
     }
 
+    [DataContract]
     public enum PageQuality
     {
+        [EnumMember]
         WithoutText = 0,
+        [EnumMember]
         NotProofread = 1,
+        [EnumMember]
         Problematic = 2,
+        [EnumMember]
         Proofread = 3,
+        [EnumMember]
         Validated = 4
     }
 }

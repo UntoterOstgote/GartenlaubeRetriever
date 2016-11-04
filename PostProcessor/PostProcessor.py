@@ -76,7 +76,7 @@ def success_rate(string, num_mutations, b_prob, reps):
 
 def debug(string, num_mutations, b_prob):
     strings = mutate_string(string, num_mutations, b_prob)
-    strings = "Es muß für Jeden, der nicht allen edlern Regungen verschlossen ist – und deren sind doch Wenige – wenn er vor diesem tiefen Abgrunde des Leidens und Jammers steht, der wunderbare Todesmuth einfacher, aller höhern Bildung baarer Arbeiter eine Erscheinung sein, die aus dem nur zu oft trüben und bewegten Treiben der Industrie unserer Zeit undurchdringlicher emporsteigt wie ein Stern, der aus undurchdringlicher W^ikennacht rettungverheißend für den bedrängten undurchdringlicher Schiffer hervortritt. Bor der Macht der Elemente ist des Menschen Wissen nnv rtonnen nur zu oft Ohnmacht, aber aus dem Untergänge selbst erhebt sich das Ewige in ihm und beurkurdet triumphirend seinen göttlichen Ursprung. – So mildert den Iheilnehmenden Schmerz an dem’Unheile die strahlende Erscheinung aufopfernden Hcldenmuthes, die wir in diesen Tagen wahrgenommen haben, und mit Wonne verweilt der tränenschwere Blick bei diesen Rettungöscenen. Und daß das SchweizerVolk so denkt und wie es handeln wird, das zeigt am besten wohl der Wiederhall, den in allen Thalschasten des Landes die öffentliche Stimme gefunden, welche „am Grabe der Arbeiter“ also sprach: „Hier ruhen sie nach harten TagesmÜhen, gefallen auf dem Felde der Ehre, gefallen im Dienste der ganzen menschlichen Gesellschaft, gefallen für die Verwirklichung der höchsten Idee des Jahrhunderts, den freien Verkehr der Menschenkinder der verschiedensten Nationen, Italiener, Engländer, Franzosen, Deutsche, Schweizer – ein gemeinsames Unglück hat Euch erreicht bei der Arbeit für einen gemeinsamen Zweck.".split(" ")
+    strings = "Arne Janning"
     ltuples = []
     for item in strings:
         the_mean = mean_dissimilarity(item, strings)
@@ -85,25 +85,25 @@ def debug(string, num_mutations, b_prob):
     print "My best guess: {}".format(sorted(ltuples)[0][1])
     return sorted(ltuples)[0][1]
 
-debug("undurchdringlicher", 20, .9)
+debug("Arne Janning", 20, .9)
 
-for word in ["morrissey", "counterrevolutionaries"]:
-     for sample in [5, 20, 100]:
-         for i in [.99, .98, .95, .9, .85, .8, .75, .7]:
-             rate = success_rate(word, sample, i, 1000)
-             print "{}\t{}\t{}\t{}\t{}". format(word, str(sample), str(i), 
-                                          rate[0], rate[1])
-             sys.stdout.flush()
+#for word in ["morrissey", "counterrevolutionaries"]:
+#     for sample in [5, 20, 100]:
+#         for i in [.99, .98, .95, .9, .85, .8, .75, .7]:
+#             rate = success_rate(word, sample, i, 1000)
+#             print "{}\t{}\t{}\t{}\t{}". format(word, str(sample), str(i), 
+#                                          rate[0], rate[1])
+#             sys.stdout.flush()
 
 
-for word in ["morrissey"]:
-     for sample in xrange(1, 51):
-         #for i in [.99, .98, .95, .9, .85, .8, .75, .7]:
-         for i in [.80]:
-             rate = success_rate(word, sample, i, 1000)
-             print "{}\t{}\t{}\t{}\t{}". format(word, str(sample), str(i), 
-                                          rate[0], rate[1])
-             sys.stdout.flush()
+#for word in ["morrissey"]:
+#     for sample in xrange(1, 51):
+#         #for i in [.99, .98, .95, .9, .85, .8, .75, .7]:
+#         for i in [.80]:
+#             rate = success_rate(word, sample, i, 1000)
+#             print "{}\t{}\t{}\t{}\t{}". format(word, str(sample), str(i), 
+#                                          rate[0], rate[1])
+#             sys.stdout.flush()
 
 
 """

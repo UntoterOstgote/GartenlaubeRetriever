@@ -59,6 +59,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +73,9 @@
     <Compile Include="BusinessObjects\Gartenlaube\GartenlaubeIssue.cs" />
     <Compile Include="BusinessObjects\Gartenlaube\GartenlaubePage.cs" />
     <Compile Include="BusinessObjects\Gartenlaube\GartenlaubeYear.cs" />
+    <Compile Include="BusinessObjects\Lucene\GartenlaubeArticleDocument.cs" />
+    <Compile Include="BusinessObjects\Lucene\GartenlaubeArticleSearcher.cs" />
+    <Compile Include="BusinessObjects\Lucene\GartenlaubeArticleWriter.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Services\GartenlaubeService.cs" />
     <Compile Include="GartenlaubeFormatter.cs" />
@@ -97,7 +102,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BusinessObjects\Lucene\" />
     <Folder Include="Index\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
